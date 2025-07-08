@@ -140,7 +140,7 @@ const Events = () => {
                 {filteredPast.length > 0 ? (
                   filteredPast.map((event) => (
                     <Card key={event.id} className="overflow-hidden card-hover flex flex-col h-full">
-                      <div className="h-96 xs:h-[28rem] sm:h-[32rem] md:h-[36rem] lg:h-[40rem] overflow-hidden">
+                      <div className="h-[28rem] xs:h-[32rem] sm:h-[36rem] md:h-[40rem] lg:h-[44rem] overflow-hidden">
                         <img
                           src={event.image}
                           alt={event.title}

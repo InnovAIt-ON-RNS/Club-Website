@@ -40,48 +40,6 @@ const About = () => {
   
   
   
-  const leaders = [
-    {
-      name: "Mr. SATISH SHETTY",
-      title: "Chairman, RNSIT",
-      description: "Chairman of RNS Institute of Technology, guiding the institution's vision and mission.",
-      image: "./images/Leaders/Chair.webp"
-    },
-    {
-      name: "Mr. KARAN S SHETTY",
-      title: "CEO, RNSIT",
-      description: "CEO of RNS Institute of Technology, overseeing the institution's operations and strategic direction.",
-      image: "./images/Leaders/CEO.webp"
-    },
-     {
-      name: "Mr. MURALIKRISHNA MYSORE",
-      title: "CTO, RNSIT",
-      description: "Chief Technology Officer of RNS Institute of Technology, leading technology initiatives and innovations.",
-      image: "./images/Leaders/CTO.webp"
-    },
-    {
-      name: "Dr. M K VENKATESHA",
-      title: "Director, RNSIT",
-      description: "Director of RNS Institute of Technology, providing vision and leadership to the college community.",
-      image: "./images/Leaders/Director.webp"
-    },
-   
-    {
-      name: "Dr. RAMESH BABU H S",
-      title: "Principal, RNSIT",
-      description: "Principal of RNS Institute of Technology, guiding the institution and its students.",
-      image: "./images/Leaders/Principal.webp"
-    },
-    {
-      name: "Dr. ANDHE PALLAVI",
-      title: "HOD, AIML Department",
-      description: "Head of the Department, Artificial Intelligence and Machine Learning, RNSIT.",
-      image: "./images/Leaders/Dr.-Andhe-Pallavi Ma'am HOD.jpg"
-    },
-   
-   
-  ];
-
   const advisors = [
     {
       name: "Prof. Sajitha N",
@@ -110,35 +68,53 @@ const About = () => {
           
           {/* Mission Section */}
           <section className="mb-20">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 className="text-2xl sm:text-3xl font-bold mb-4">Our Mission</h2>
-                <p className="text-base sm:text-lg mb-4 sm:mb-6 text-muted-foreground">
+                <h2 className="text-3xl font-bold mb-4">Our Mission</h2>
+                <p className="text-lg mb-6 text-muted-foreground">
                   We believe in empowering students to explore, learn, and innovate in the world of technology. Our mission is to create a collaborative environment where tech enthusiasts can share knowledge, build projects, and grow together.
                 </p>
-                <p className="text-base sm:text-lg mb-4 sm:mb-6 text-muted-foreground">
+                <p className="text-lg mb-6 text-muted-foreground">
                   Through workshops, hackathons, and speaker events, we aim to bridge the gap between academic learning and industry practice, preparing our members for successful careers in technology.
                 </p>
-                <div className="flex gap-2 sm:gap-4 flex-wrap">
-                  <div className="bg-muted/50 px-3 py-2 rounded-full text-xs sm:text-sm font-medium">20+ Active Members</div>
-                  <div className="bg-muted/50 px-3 py-2 rounded-full text-xs sm:text-sm font-medium">10+ Events Per Year</div>
+                <div className="flex gap-4 flex-wrap">
+                  <div className="bg-muted/50 px-4 py-2 rounded-full text-sm font-medium">20+ Active Members</div>
+                  <div className="bg-muted/50 px-4 py-2 rounded-full text-sm font-medium">10+ Events Per Year</div>
                 </div>
               </div>
-              <div className="bg-card p-4 sm:p-8 rounded-lg border border-border shadow-md mt-6 lg:mt-0">
-                <blockquote className="text-base sm:text-lg italic mb-4 sm:mb-6">
-                  "Our goal is to foster a community where passion for technology translates into real-world skills and innovative solutions. We're not just about coding; we're about creating impact through technology."
+              <div className="bg-card p-8 rounded-lg border border-border shadow-md">
+                <blockquote className="text-lg italic mb-6">
+                  "Proud to see the club grow from an idea to a hub of creativity and AI excellence."
                 </blockquote>
                 <div className="flex items-center">
-                  <div className="h-10 w-10 sm:h-12 sm:w-12 rounded-full overflow-hidden mr-3 sm:mr-4">
+                  <div className="h-12 w-12 rounded-full overflow-hidden mr-4">
                     <img 
-                      src="./images/members/Sujal S.jpg" 
+                      src="./images/Alumni/amogh-kotha.jpg" 
                       alt="Club Head" 
                       className="h-full w-full object-cover"
                     />
                   </div>
                   <div>
-                    <p className="font-medium text-sm sm:text-base">Sujal S</p>
-                    <p className="text-xs sm:text-sm text-muted-foreground">Head, InnovAIt-ON Club</p>
+                    <p className="font-medium">Amogh Kotha</p>
+                    <p className="text-sm text-muted-foreground">Head (2023-25), InnovAIt-ON Club</p>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-card p-8 rounded-lg border border-border shadow-md">
+                <blockquote className="text-lg italic mb-6">
+                 "Leading the technical front taught me how to turn ideas into action and inspire innovation at every step."
+                </blockquote>
+                <div className="flex items-center">
+                  <div className="h-12 w-12 rounded-full overflow-hidden mr-4">
+                    <img 
+                      src="./images/Alumni/amogh-bharadwaj.jpg" 
+                      alt="Club Head" 
+                      className="h-full w-full object-cover"
+                    />
+                  </div>
+                  <div>
+                    <p className="font-medium">Amogh M</p>
+                    <p className="text-sm text-muted-foreground">Technical Head (2023-25), InnovAIt-ON Club</p>
                   </div>
                 </div>
               </div>
@@ -147,59 +123,28 @@ const About = () => {
           
           {/* Focus Areas */}
           <section className="mb-20">
-            <div className="text-center mb-8 sm:mb-12">
-              <h2 className="text-2xl sm:text-3xl font-bold mb-4">Our Focus Areas</h2>
-              <p className="text-muted-foreground max-w-xl mx-auto text-sm sm:text-base">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold mb-4">Our Focus Areas</h2>
+              <p className="text-muted-foreground max-w-xl mx-auto">
                 We explore and develop expertise in various domains of technology.
               </p>
             </div>
-            <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {focusAreas.map((area, index) => (
                 <div 
                   key={index} 
-                  className="bg-card p-4 sm:p-6 rounded-lg border border-border card-hover"
+                  className="bg-card p-6 rounded-lg border border-border card-hover"
                 >
-                  <div className="text-3xl sm:text-4xl mb-2 sm:mb-4">{area.icon}</div>
-                  <h3 className="text-base sm:text-xl font-semibold mb-1 sm:mb-2">{area.title}</h3>
-                  <p className="text-xs sm:text-base text-muted-foreground">{area.description}</p>
+                  <div className="text-4xl mb-4">{area.icon}</div>
+                  <h3 className="text-xl font-semibold mb-2">{area.title}</h3>
+                  <p className="text-muted-foreground">{area.description}</p>
                 </div>
               ))}
             </div>
           </section>
           
           
-          {/* Leaders */}
-          <section className="mb-20">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-4">Our Leaders</h2>
-              <p className="text-muted-foreground max-w-xl mx-auto">
-                Meet the institutional leaders who inspire and support our club's vision.
-              </p>
-            </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-8">
-              {leaders.map((leader, index) => (
-                <Card key={index} className="overflow-hidden card-hover flex flex-col items-center">
-                  <div className="h-40 w-40 xs:h-56 xs:w-56 sm:h-64 sm:w-64 md:h-80 md:w-80 overflow-hidden mt-4 sm:mt-6 mb-2 sm:mb-4 border-4 border-tech-purple">
-                    <img
-                      src={leader.image}
-                      alt={leader.name}
-                      className="h-full w-full object-cover"
-                    />
-                  </div>
-                  <CardHeader className="items-center text-center">
-                    <CardTitle className="text-base sm:text-lg md:text-xl">{leader.name}</CardTitle>
-                    <CardDescription className="text-tech-purple font-medium text-xs sm:text-base">
-                      {leader.title}
-                    </CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-muted-foreground text-center text-xs sm:text-base">{leader.description}</p>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </section>
-
           {/* Faculty Advisor */}
 <section className="mb-20">
             <div className="text-center mb-12">
@@ -209,24 +154,24 @@ const About = () => {
               </p>
             </div>
             
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {advisors.map((advisor, index) => (
-                <Card key={index} className="overflow-hidden card-hover flex flex-col items-center">
-                  <div className="h-40 w-40 xs:h-56 xs:w-56 sm:h-64 sm:w-64 md:h-80 md:w-80 overflow-hidden mt-4 sm:mt-6 mb-2 sm:mb-4 border-4 border-tech-purple">
+                <Card key={index} className="overflow-hidden card-hover">
+                  <div className="aspect-square overflow-hidden">
                     <img
                       src={advisor.image}
                       alt={advisor.name}
-                      className="h-full w-full object-cover"
+                      className="w-full h-full object-cover"
                     />
                   </div>
-                  <CardHeader className="items-center text-center">
-                    <CardTitle className="text-base sm:text-lg md:text-xl">{advisor.name}</CardTitle>
-                    <CardDescription className="text-tech-purple font-medium text-xs sm:text-base">
+                  <CardHeader>
+                    <CardTitle>{advisor.name}</CardTitle>
+                    <CardDescription className="text-tech-purple font-medium">
                       {advisor.title}
                     </CardDescription>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-muted-foreground text-center text-xs sm:text-base">{advisor.description}</p>
+                    <p className="text-muted-foreground">{advisor.description}</p>
                   </CardContent>
                 </Card>
               ))}
@@ -245,45 +190,48 @@ const About = () => {
               </div>
               
               <Tabs defaultValue="innovation" className="w-full">
-                {/* Make tab list horizontally scrollable on mobile */}
-                <TabsList className="flex overflow-x-auto gap-2 mb-8 sm:mb-12 scrollbar-hide max-w-full sm:max-w-2xl mx-auto">
-                  <TabsTrigger value="innovation" className="text-xs sm:text-base min-w-[110px]">Innovation</TabsTrigger>
-                  <TabsTrigger value="collaboration" className="text-xs sm:text-base min-w-[110px]">Collaboration</TabsTrigger>
-                  <TabsTrigger value="inclusivity" className="text-xs sm:text-base min-w-[110px]">Inclusivity</TabsTrigger>
-                  <TabsTrigger value="learning" className="text-xs sm:text-base min-w-[110px]">Continuous Learning</TabsTrigger>
+                <TabsList className="grid w-full max-w-2xl mx-auto grid-cols-4 mb-12">
+                  <TabsTrigger value="innovation">Innovation</TabsTrigger>
+                  <TabsTrigger value="collaboration">Collaboration</TabsTrigger>
+                  <TabsTrigger value="inclusivity">Inclusivity</TabsTrigger>
+                  <TabsTrigger value="learning">Continuous Learning</TabsTrigger>
                 </TabsList>
+                
                 <TabsContent value="innovation">
                   <div className="max-w-3xl mx-auto text-center">
-                    <div className="text-3xl sm:text-5xl mb-4 sm:mb-6">💡</div>
-                    <h3 className="text-lg sm:text-2xl font-bold mb-2 sm:mb-4">Innovation</h3>
-                    <p className="text-sm sm:text-lg text-muted-foreground">
+                    <div className="text-5xl mb-6">💡</div>
+                    <h3 className="text-2xl font-bold mb-4">Innovation</h3>
+                    <p className="text-lg text-muted-foreground">
                       We encourage creative thinking and novel approaches to problem-solving. Our members are constantly pushing boundaries and exploring new technologies to create impactful solutions.
                     </p>
                   </div>
                 </TabsContent>
+                
                 <TabsContent value="collaboration">
                   <div className="max-w-3xl mx-auto text-center">
-                    <div className="text-3xl sm:text-5xl mb-4 sm:mb-6">🤝</div>
-                    <h3 className="text-lg sm:text-2xl font-bold mb-2 sm:mb-4">Collaboration</h3>
-                    <p className="text-sm sm:text-lg text-muted-foreground">
+                    <div className="text-5xl mb-6">🤝</div>
+                    <h3 className="text-2xl font-bold mb-4">Collaboration</h3>
+                    <p className="text-lg text-muted-foreground">
                       We believe in the power of teamwork. By combining diverse skills and perspectives, we create better outcomes than any individual could achieve alone. Our community thrives on sharing knowledge and supporting each other.
                     </p>
                   </div>
                 </TabsContent>
+                
                 <TabsContent value="inclusivity">
                   <div className="max-w-3xl mx-auto text-center">
-                    <div className="text-3xl sm:text-5xl mb-4 sm:mb-6">🌈</div>
-                    <h3 className="text-lg sm:text-2xl font-bold mb-2 sm:mb-4">Inclusivity</h3>
-                    <p className="text-sm sm:text-lg text-muted-foreground">
+                    <div className="text-5xl mb-6">🌈</div>
+                    <h3 className="text-2xl font-bold mb-4">Inclusivity</h3>
+                    <p className="text-lg text-muted-foreground">
                       We welcome members from all backgrounds, experience levels, and disciplines. Everyone deserves the opportunity to learn and contribute to the tech community, and we strive to create a safe and supportive environment for all.
                     </p>
                   </div>
                 </TabsContent>
+                
                 <TabsContent value="learning">
                   <div className="max-w-3xl mx-auto text-center">
-                    <div className="text-3xl sm:text-5xl mb-4 sm:mb-6">📚</div>
-                    <h3 className="text-lg sm:text-2xl font-bold mb-2 sm:mb-4">Continuous Learning</h3>
-                    <p className="text-sm sm:text-lg text-muted-foreground">
+                    <div className="text-5xl mb-6">📚</div>
+                    <h3 className="text-2xl font-bold mb-4">Continuous Learning</h3>
+                    <p className="text-lg text-muted-foreground">
                       Technology is always evolving, and so are we. We promote a culture of lifelong learning, where members are encouraged to constantly develop their skills, share knowledge, and stay curious about emerging technologies.
                     </p>
                   </div>

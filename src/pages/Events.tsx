@@ -163,11 +163,7 @@ const Events = () => {
                           {event.location}
                         </div>
                       </CardContent>
-                      <CardFooter>
-                        <Button variant="outline" className="w-full text-xs sm:text-base">
-                          View Details
-                        </Button>
-                      </CardFooter>
+                      {/* Removed View Details button as requested */}
                     </Card>
                   ))
                 ) : (

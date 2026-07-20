@@ -32,26 +32,36 @@ const HeroSection = () => {
               </span>
             </h1>
             
-            <p className="text-lg md:text-xl text-muted-foreground max-w-lg lg:max-w-md mx-auto lg:mx-0 leading-relaxed">
-              Our project-based club is a dynamic community of passionate individuals dedicated to bring ideas to life. Dive into collaborative projects spanning diverse fields from cutting-edge technology to sustainable design.
+            <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300/90 max-w-lg lg:max-w-md mx-auto lg:mx-0 leading-relaxed font-medium backdrop-blur-sm">
+              Transform your ideas into <span className="text-transparent bg-gradient-to-r from-tech-blue to-tech-purple bg-clip-text font-semibold">cutting-edge projects</span>. Join a community of innovators building the future through <span className="text-transparent bg-gradient-to-r from-tech-purple to-tech-pink bg-clip-text font-semibold">collaborative tech</span>, hands-on workshops, and <span className="text-gray-900 dark:text-white font-semibold">real-world impact</span>.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
               <Button 
                 size="lg" 
-                className="bg-gradient-to-r from-tech-blue via-tech-purple to-tech-pink hover:opacity-90 px-8 text-base font-semibold shadow-lg hover:shadow-tech-purple/50 transition-all duration-300 group" 
+                className="relative bg-gradient-to-r from-tech-blue via-tech-purple to-tech-pink hover:shadow-2xl hover:shadow-tech-purple/60 px-8 py-6 text-base font-bold transition-all duration-300 group overflow-hidden rounded-xl border-0"
                 onClick={scrollToContact}
               >
-                Join the Club 
-                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                {/* Animated shine effect */}
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+                
+                <span className="relative z-10 flex items-center">
+                  Join the Club 
+                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                </span>
               </Button>
               <Button 
                 size="lg" 
                 variant="outline"
-                className="border-2 border-tech-purple/50 hover:bg-tech-purple/10 px-8 text-base font-semibold"
+                className="relative border-2 border-tech-purple/50 hover:border-tech-purple bg-transparent hover:bg-tech-purple/10 px-8 py-6 text-base font-bold transition-all duration-300 group rounded-xl overflow-hidden backdrop-blur-sm"
                 onClick={() => navigate('/events')}
               >
-                Explore Events
+                {/* Glow effect on hover */}
+                <div className="absolute inset-0 bg-gradient-to-r from-tech-purple/0 via-tech-purple/20 to-tech-pink/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                
+                <span className="relative z-10 bg-gradient-to-r from-gray-800 via-tech-purple to-tech-pink bg-clip-text group-hover:text-transparent transition-all duration-300 dark:from-white">
+                  Explore Events
+                </span>
               </Button>
             </div>
           </div>

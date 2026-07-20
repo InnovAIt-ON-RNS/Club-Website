@@ -12,9 +12,13 @@ const Index = () => {
     <Layout>
       <HeroSection />
       
-      <section className="py-10 sm:py-16">
-        <div className="container mx-auto px-2 sm:px-4">
-          <h2 className="text-2xl sm:text-3xl font-bold text-center mb-6 sm:mb-8 gradient-heading">Upcoming Events</h2>
+      <section className="py-16 sm:py-20 relative">
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-muted/10 to-transparent pointer-events-none"></div>
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold gradient-heading mb-4">What's Next</h2>
+            <p className="text-muted-foreground text-lg">Stay tuned for our upcoming events and workshops</p>
+          </div>
           <EventCarousel />
         </div>
       </section>

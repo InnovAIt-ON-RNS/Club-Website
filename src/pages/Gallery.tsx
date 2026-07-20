@@ -156,10 +156,10 @@ const Gallery = () => {
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end pointer-events-none">
                               <div className="p-4 w-full">
-                                <h3 className="text-white text-base font-semibold">{item.title}</h3>
+                                <h3 className="text-foreground text-base font-semibold">{item.title}</h3>
                                 <div className="flex items-center gap-2 mt-1">
                                   <ImageIcon className="w-4 h-4 text-tech-purple" />
-                                  <span className="text-sm text-white/80">Click to view</span>
+                                  <span className="text-sm text-foreground/80">Click to view</span>
                                 </div>
                               </div>
                             </div>

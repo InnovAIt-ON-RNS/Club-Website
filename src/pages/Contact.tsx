@@ -46,8 +46,8 @@ const Contact = () => {
       <div className="py-12 md:py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h1 className="text-4xl font-bold mb-2 gradient-heading">Contact Us</h1>
-            <p className="text-muted-foreground max-w-xl mx-auto">
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 gradient-heading">Contact Us</h1>
+            <p className="text-xl text-muted-foreground max-w-xl mx-auto">
               Have a question or want to get involved? Reach out to us through any of the channels below.
             </p>
           </div>

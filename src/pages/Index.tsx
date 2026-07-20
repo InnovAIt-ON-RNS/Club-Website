@@ -5,6 +5,7 @@ import EventCarousel from "../components/home/EventCarousel";
 import FeaturesSection from "../components/home/FeaturesSection";
 import FocusAreasSection from "../components/home/FocusAreasSection";
 import CallToAction from "../components/home/CallToAction";
+import ContactSection from "../components/home/ContactSection";
 
 const Index = () => {
   return (
@@ -20,6 +21,7 @@ const Index = () => {
       
       <FeaturesSection />
       <FocusAreasSection />
+      <ContactSection />
       <CallToAction />
     </Layout>
   );

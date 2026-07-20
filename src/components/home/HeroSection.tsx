@@ -59,7 +59,7 @@ const HeroSection = () => {
                 {/* Glow effect on hover */}
                 <div className="absolute inset-0 bg-gradient-to-r from-tech-purple/0 via-tech-purple/20 to-tech-pink/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 
-                <span className="relative z-10 bg-gradient-to-r from-gray-800 via-tech-purple to-tech-pink bg-clip-text group-hover:text-transparent transition-all duration-300 dark:from-white">
+                <span className="relative z-10 bg-gradient-to-r from-gray-800 via-tech-purple to-tech-pink dark:from-white dark:via-tech-purple dark:to-tech-pink bg-clip-text group-hover:text-transparent transition-all duration-300">
                   Explore Events
                 </span>
               </Button>

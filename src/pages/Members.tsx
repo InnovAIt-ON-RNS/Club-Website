@@ -51,7 +51,7 @@ const Members = () => {
       name: "Nihar P",
       role: "Sponsorship and Finance Head",
       bio: "I bring in the backing, optimize the resources, and keep the numbers working in our favor building strong partnerships.",
-      image: "./images/Leaders/nihar.jpg",
+      image: "#",
       linkedin: "https://www.linkedin.com/in/nihar-prasanna-15a712378/",
     },
   ];
@@ -227,7 +227,7 @@ const Members = () => {
       name: "Sujith G",
       role: "Events Team Member",
       bio: "Contributing to event coordination and ensuring smooth execution of club activities.",
-      image: "./images/contrib/Sujith.jpg",
+      image: "#",
       linkedin: "#",
     },
     {
@@ -315,11 +315,11 @@ const Members = () => {
       linkedin: "https://www.linkedin.com/in/sanjana-deshpande-a44a433a9",
     },
     {
-      id: 5,
+      id: 4,
       name: "Shravani K",
       role: "Public Relations Team Member",
       bio: "Supporting the club's communication and public relations initiatives.",
-      image: "./images/contrib/Shravani.jpg",
+      image: "#",
       linkedin: "#",
     },
   ];
@@ -363,7 +363,7 @@ const Members = () => {
       name: "Rakshitha S",
       role: "Digital Media Coordinator",
       bio: "Working on digital content creation and visual design for the club.",
-      image: "./images/contrib/Rakshitha.jpg",
+      image: "#",
       linkedin: "#",
     },
     {
@@ -455,7 +455,7 @@ const Members = () => {
       name: "Vikranth V Chagi",
       role: "Sponsorship & Finance Team Member",
       bio: "Supporting sponsorship and financial operations for the club.",
-      image: "./images/contrib/Vikranth.jpg",
+      image: "#",
       linkedin: "#",
     },
   ];

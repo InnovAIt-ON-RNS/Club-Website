@@ -11,7 +11,6 @@ import Newsletter from "./pages/Newsletter";
 import Events from "./pages/Events";
 import Members from "./pages/Members";
 import About from "./pages/About";
-import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -30,7 +29,6 @@ const App = () => (
             <Route path="/events" element={<Events />} />
             <Route path="/members" element={<Members />} />
             <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>

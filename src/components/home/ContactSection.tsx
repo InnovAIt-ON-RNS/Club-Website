@@ -68,23 +68,25 @@ const ContactSection = () => {
               <CardTitle className="group-hover:text-tech-pink transition-colors">Call Us</CardTitle>
               <CardDescription>Club Coordinators</CardDescription>
             </CardHeader>
-            <CardContent className="text-center space-y-3">
+            <CardContent className="text-center space-y-4">
               <div>
-                <p className="font-medium text-sm">Sujal S</p>
+                <p className="font-medium text-sm">Noti Gayatri</p>
+                <p className="text-xs text-muted-foreground">Head</p>
                 <a 
-                  href="tel:+918310630937" 
+                  href="tel:+919964848456" 
                   className="text-tech-pink hover:text-tech-fuchsia transition-colors font-medium"
                 >
-                  +91 83106 30937
+                  +91 99648 48456
                 </a>
               </div>
               <div>
-                <p className="font-medium text-sm">Syed Javed M</p>
+                <p className="font-medium text-sm">Rajeshwari Reddy</p>
+                <p className="text-xs text-muted-foreground">Co-head</p>
                 <a 
-                  href="tel:+917899278471" 
+                  href="tel:+919243016666" 
                   className="text-tech-pink hover:text-tech-fuchsia transition-colors font-medium"
                 >
-                  +91 78992 78471
+                  +91 92430 16666
                 </a>
               </div>
             </CardContent>

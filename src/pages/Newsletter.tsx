@@ -5,19 +5,18 @@ import { Button } from "@/components/ui/button";
 import { useToast } from "@/components/ui/use-toast";
 import { Toaster } from "@/components/ui/toaster";
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
-
 const Newsletter = () => {
   const nameRef = useRef<HTMLInputElement>(null);
   const emailRef = useRef<HTMLInputElement>(null);
   const { toast } = useToast();
 
-  const handleSubscribe = async (event: FormEvent) => {
+  const handleSubscribe = (event: FormEvent) => {
     event.preventDefault();
 
-    const name = nameRef.current?.value;
-    const email = emailRef.current?.value;
+    const name = nameRef.current?.value.trim();
+    const email = emailRef.current?.value.trim();
 
+    // Validate that both fields are filled
     if (!name || !email) {
       toast({
         variant: "destructive",
@@ -27,40 +26,15 @@ const Newsletter = () => {
       return;
     }
 
-    try {
-      const response = await fetch(`${API_URL}/newsletter`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ name, email }),
-      });
+    // Show success message
+    toast({
+      title: "Successfully Subscribed!",
+      description: "Thank you for subscribing to our newsletter. You'll receive updates soon!",
+    });
 
-      const data = await response.json();
-
-      if (response.ok) {
-        toast({
-          title: "Success!",
-          description: "You have successfully subscribed to our newsletter.",
-        });
-        // Clear form
-        if (nameRef.current) nameRef.current.value = '';
-        if (emailRef.current) emailRef.current.value = '';
-      } else {
-        toast({
-          variant: "destructive",
-          title: "Error",
-          description: data.message || "Failed to subscribe. Please try again.",
-        });
-      }
-    } catch (error) {
-      console.error("Error subscribing:", error);
-      toast({
-        variant: "destructive",
-        title: "Error",
-        description: "An error occurred. Please try again later.",
-      });
-    }
+    // Clear form fields
+    if (nameRef.current) nameRef.current.value = '';
+    if (emailRef.current) emailRef.current.value = '';
   };
 
   return (

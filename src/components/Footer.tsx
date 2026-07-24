@@ -29,7 +29,13 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 items-start mb-12">
           {/* Logo and Description */}
           <div className="col-span-1">
-            <button onClick={scrollToTop} className="flex items-center space-x-2 mb-4 group">
+            <button 
+              onClick={() => {
+                navigate('/');
+                scrollToTop();
+              }} 
+              className="flex items-center space-x-2 mb-4 group cursor-pointer"
+            >
               <div className="relative">
                 <Code className="h-8 w-8 text-tech-purple group-hover:rotate-12 transition-transform duration-300" />
                 <div className="absolute inset-0 bg-tech-purple/20 blur-xl group-hover:bg-tech-purple/40 transition-all duration-300"></div>

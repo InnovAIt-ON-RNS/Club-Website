@@ -74,7 +74,7 @@ const HeroSection = () => {
               <img 
                 src="./images/logo.png" 
                 alt="Tech Club" 
-                className="relative rounded-2xl mx-auto animate-float drop-shadow-2xl"
+                className="relative rounded-2xl mx-auto animate-float hover:[animation-play-state:paused] drop-shadow-2xl"
                 style={{ maxWidth: '400px' }}
               />
             </div>
